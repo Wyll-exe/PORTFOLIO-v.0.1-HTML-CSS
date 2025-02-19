@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* { margin: 0;padding: 0; box-sizing: border-box; }
+
+body { background-color: rgb(41,88,79); }
+
+.header_0 { font-size:  86px; font-weight: 500; }
+
+.button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    
+}
+
+body { font-family: 'Roboto', sans-serif; }
+
+a { text-decoration: none; }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: rgb(41,88,79);
+
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+.logo_title,
+.navbar ul li a,
+.header {
+    color: rgb(252, 252, 252);
+
+}
+
+.logo_title img {
+    width: 65px;
+    height: auto;
+
+}
+
+.navbar ul li a {
+    color: aliceblue;
+    padding: 12px;
+    margin: 0 6px;
+
+}
+
+.navbar ul li a:hover {
+    color: rgb(243, 243, 243);
+    background-color: rgba(214,114,12);
+    border-radius: 4px;
+
+}
+
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5; 
+
+}
+
+.header {
+    position: relative; 
+    padding-top: 100px;
+    background: url('image.jpg') no-repeat center/cover;
+    height: 93.9vh;
+    background-size: cover;
+
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; 
+    filter: blur(8px); 
+    z-index: -1; 
+
+}
+
+.header .header_content {
+    position: relative; 
+    z-index: 1; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button {
+    color: rgb(243, 243, 243);
+    background-color: #24493d;
+
+}
+
+
+.button:hover {
+    background-color: rgb(214,114,12);
+    color: rgb(255, 255, 255);
+
+}
+
+/* test grill */
+
+
+.cards-container {
+    display: flex;                
+    justify-content: center;      
+    gap: 20px;                    
+    flex-wrap: wrap;              
+    padding: 20px;  
+
+}
+
+
+.card {
+    display: flex;                
+    flex-direction: column;       
+    justify-content: flex-end;    
+    align-items: center;          
+    width: 300px;                 
+    min-height: 300px;            
+    background-color: rgb(157, 184, 172); 
+    color: white;                 
+    padding: 20px;                
+    border-radius: 10px;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+    margin: 1rem;                 
+    text-align: center; 
+
+}
+
+
+.card h2 {
+    margin-bottom: 0;             
+    font-size: 24px;   
+
+}
+
+
+.card h3 {
+    margin-top: 0;                
+    font-size: 20px;    
+
+}
+
+
+.card:hover {
+    box-shadow: 0 51px 78px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);  
+    transform: scale(1.05);  
+    transition: all 0.3s ease;  
+
+}
+
+
+h2:hover {
+    color: rgba(24, 100, 9, 0.836);
+}
+
+h3:hover {
+    color: rgb(146, 11, 78);
+}
+
+.card-1:hover {
+    background: url('museum.jpg');
+}
+
+.card-2:hover {
+    background: url('git.png');
+}
+.card-3:hover {
+    background: url('figma.png');
+}
+
+.card-4:hover {
+    background: url('donjon.png');
+}
+
+
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    background-color: rgb(44, 185, 160);
+    z-index: 5;
+
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+
+.footer p {
+    color: rgb(252, 252, 252);
+
+}
+
+.footer p {
+    color: aliceblue;
+    padding: 0px;
+    margin:  6px;
+    text-decoration: none;
+
+}
+
+.footer p :hover {
+    color: rgb(243, 134, 9);
+    border-radius: 4px;
+
+}
+
+  
+@media (max-width: 768px) {
+    .card-1, .card-2, .card-3, .card-4 {
+        background-image: none; 
+    }
+
+    .card-1 {
+        background-image: url('museum.jpg');  
+    }
+
+    .card-2 {
+        background-image: url('git.png');  
+    }
+
+    .card-3 {
+        background-image: url('figma.png');  
+    }
+
+    .card-4 {
+        background-image: url('donjon.png');  
+    }
+
+ 
+    .card-1:hover,
+    .card-2:hover,
+    .card-3:hover,
+    .card-4:hover {
+        background-image: none;
+    }
+}
