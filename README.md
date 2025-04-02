@@ -1,5 +1,5 @@
 # PORTFOLIO-v.0.1
-(une version de test pour un excercice de cours)
+## (une version de test pour un excercice de cours)
 
 
 Réalisation d'un portfolio avec du html et du css.
